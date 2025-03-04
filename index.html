@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Click one option to play you have 5 rounds</h1>
-    <button onclick="Rock()">Rock</button>
-    <button onclick="Paper()">Paper</button>
-    <button onclick="Scissors()">Scissors</button>
-    <p id="User_Score">User Score</p>
-    <p id="Round">Round</p>
+    <h1 class="head__title">Click one option to play you have 5 rounds !</h1>
+
+    <div class="buttons__container">
+        <button class="button rock" onclick="Rock()">Rock</button>
+        <button class="button paper" onclick="Paper()">Paper</button>
+        <button class="button scissors" onclick="Scissors()">Scissors</button>
+    </div>
+
+    <div class="users__scores">
+        <h3 id="User_Score">User Score</h3>
+        <h3 id="Round">Round</h3>
+    </div>
     <h2 id="Mini_Round"></h2>
     <h1 id="Final_Winner"></h1>
 
